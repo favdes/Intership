@@ -1,0 +1,32 @@
+.a{
+    color: #F16529;
+    font-family: "Hammersmith One";
+    font-size: 24px;
+    line-height: normal;
+}
+.p{
+color: #B5B5B5;
+font-family: Lato;
+/* font-size: 13.5px; */
+line-height: 28px; 
+}
+.b{
+ color: #FFF;
+font-family: "Hammersmith One";
+font-size: 47px;
+}
+.contact{
+color: #B5B5B5;
+font-family: "Hammersmith One";
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+gap: 0.5rem;
+}
+.email{
+    padding-left:2rem ;
+}
+.git{
+    padding-right: 3rem;
+}
