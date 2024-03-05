@@ -3,30 +3,153 @@
     font-family: "Hammersmith One";
     font-size: 24px;
     line-height: normal;
+    margin-bottom: 3rem;
+    margin-top: -15rem;
+}
+.full{
+    color: #F16529;
+    font-family: "Hammersmith One";
+    font-size: 24px;
+    line-height: normal;
+
 }
 .p{
 color: #B5B5B5;
-font-family: Lato;
-/* font-size: 13.5px; */
-line-height: 28px; 
+font-family: "Lato";
+line-height: 30px;  
+}
+.contact{
+    margin-top: -3.5rem !important;
 }
 .b{
  color: #FFF;
 font-family: "Hammersmith One";
-font-size: 47px;
+animation: name 2s alternate-reverse linear infinite;
 }
-.contact{
-color: #B5B5B5;
-font-family: "Hammersmith One";
-font-size: 23px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-gap: 0.5rem;
+.image{
+    width: 2500px;
+    animation: image 2s ;
+    margin-top: rem;
 }
-.email{
-    padding-left:2rem ;
+.EG{
+    margin-top: -2rem !important;
+    color: #B5B5B5;
 }
-.git{
-    padding-right: 3rem;
+.egg{
+    margin-left: 10rem !important;
+    
+}
+
+.img1{
+    animation: img1 2s alternate-reverse linear infinite;
+}
+.img2{
+    animation: img2 2s alternate-reverse linear infinite;
+}
+.img3{
+    animation: img3 2s alternate-reverse linear infinite;
+}
+.img4{
+    animation: img4 2s alternate-reverse linear infinite;
+}
+.img5{
+    animation: img5 2s alternate-reverse linear infinite;
+}
+
+@keyframes name {
+    0%{transform: translate(0px);}
+    100%{transform: translate(180px);}
+}
+
+@keyframes img1 {
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(100px);}
+}
+@keyframes img2 {
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(100px);}
+}
+@keyframes img3 {
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(100px);}
+}
+@keyframes img4 {
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(100px);}
+}
+@keyframes img5 {
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(100px);}
+}
+@keyframes image {
+    0%{transform: translateX(300px);}
+    100%{transform: translateX(0px);}
+}
+@media(max-width:428px) {
+    .a {
+        margin-top: 6rem;
+        
+    }
+    .b{
+       font-size: 0.1rem;
+       width: 2rem; 
+       
+    }
+    .p{
+        font-family: "Lato";
+    }
+    .tools{
+        margin-top: 2rem;
+        margin-left: 1rem;
+        
+    }
+    .image{
+        margin-top: 3rem;
+    }
+    .pic{
+         margin-left: 1.5rem;
+         display: none;
+    }
+    .contact{
+        margin-left: 0.7rem;
+        
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse !important;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .EG{
+        margin-top: 9rem !important;
+        color: #B5B5B5;
+        margin-right: -2rem;
+    }
+    .pic1{
+       margin-top: -0.3rem;
+    }
+    .pic2{
+        margin-left: -5rem;
+        margin-right: 0.1rem;
+
+    
+    }
+    .pic3{
+        margin-bottom: -10rem !important;
+        margin-left: 1.3rem;
+        /* margin-top: rem; */
+        padding-left: 0.4rem;
+    }
+    .egg{
+       margin-top: -1.8rem;
+    }
+    .hub{
+      padding-top:  0.3rem;
+    }
+
+    
+
+
+
 }

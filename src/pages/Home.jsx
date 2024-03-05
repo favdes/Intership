@@ -1,62 +1,92 @@
-import React from 'react'
-// import NavBar from '../layout/NavBar'
-import img1 from "../assets/Vector (17).png"
-import img2 from "../assets/Group 7 (1).png"
-import img3 from "../assets/Group 6 (3).png"
-import img4 from "../assets/logos_javascript.png"
-import img5 from "../assets/Vector (18).png"
-import img6 from "../assets/Group 5 (2).png"
-import img7 from "../assets/my picture.jpg"
-import img8 from "../assets/Group 11.png"
-import img9 from "../assets/Vector (19).png"
-import img10 from "../assets/Vector (20).png"
-import img11 from "../assets/Saly-13.png"
-import "../style/Home.css"
+import img1 from "../assets/Vector (17).png";
+import { Link } from "react-router-dom";
+import img3 from "../assets/Group 6 (3).png";
+import img4 from "../assets/logos_javascript.png";
+import img5 from "../assets/Vector (18).png";
+import img6 from "../assets/Group 5 (2).png";
+import img7 from "../assets/my picture.jpg";
+import img8 from "../assets/Group 11.png";
+import img9 from "../assets/Vector (19).png";
+import img10 from "../assets/Vector (20).png";
+import img11 from "../assets/Group 2.png";
+import "../style/Home.css";
 
 const Home = () => {
   return (
     <>
-    <div className=''>
-      <main className='container '>
-        <div className='d-flex align-items-center justify-content-between '>
-        
-    <div className='mt-5 pt-5'>
-    <button className='a bg-white mt-5 'style={{border:'none'}}>Full Stack Developer</button>
-        <h2 className='b text-white mt-4'>Favour Echiejile</h2>
+      <div className=" bg-black">
+        <main className="container ">
+          <div className="hero d-lg-flex align-items-center justify-content-between ">
+            <div className="">
+              <button
+                className="a bg-white  tit"
+                style={{ border: "none", fontSize: "1.8rem" }}
+              >
+                Full Stack Developer
+              </button>
+              <h5 className="b text-white  "style={{ fontSize: "4rem" }} >
+                Favour Echiejile
+              </h5>
 
-        <p className='p' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pha tortor consequat nibh gravida id sit. Quis eget diam ut proin. At nisl diam urna sit. Tortor nibh ornare vestibulum amet dis eros dolor eget. Orci in enim sit luctus lacus arcu.</p> 
-        <div className=' d-flex justify-content-between  p-2 mt-3 w-75' style={{gap:"1.8rem"}}>
-        <img src={img1} alt="" />
-        <img src={img2} alt="" />
-        <img src={img3} alt="" />
-        <img src={img4} alt="" />
-        <img src={img5} alt="" />
-        <img src={img6} alt="" /></div>
-        
-        <div className='contact d-flex align-items-center pb-4'>
-        <div className='d-flex w-75 mt-5  pt-5 ' >
-          <img className=' 'style={{width:"3rem"}}  src={img7} alt="" />
-          <div className=' d-flex justify-content-between mt-2' style={{gap:"0.4rem"}}>
-            <img className='mt-1 ' style={{height:"1rem", marginLeft:"1.5rem"}} src={img8} alt="" />  <h5 className=' '>Email Me</h5>
-          <img className=' mt-1'style={{height:"1rem"}} src={img9} alt="" /></div> </div>
+              <div><p className="container mt-3 p" style={{ fontSize: "1.2rem", color: "#B5B5B5" }}>
+                CAREER OBJECTIVES : To work with existing staff, facilities and
+                ensure business objectives are achieved. Secondly, to use my
+                skills to contribute immensely to the growth of any
+                establishment through hard work, commitment and the drive for
+                excellence even as I grow forward and upward in my career.{" "}
+              </p></div>
+              <div className=" d-flex gap-1 gap-lg-5 p-2 mt-3 w-75">
+                  <div className=""><h4 className="text-white"> BootStrap 
+                  <img src={img1} alt="" className="img1 mt-3" />
+                  </h4></div>
+                <h4 className="text-white"> Html 
+                <img src={img3} alt="" className="img2 mt-2 w-75" />
+                </h4>
+                <div className=""><h4 className="text-white">
+                  JavaScript <img src={img4} alt="" className="img3 mt-3" />
+                </h4></div>
+                <h4 className="text-white">
+                  React
+                  <img src={img5} alt="" className="img4 mt-3" />
+                </h4>
+                <div className=""><h4 className="text-white">
+                  CSS <img src={img6} alt="" className="img5 mt-2 w-100" />
+                </h4></div>
+              </div>
 
-        <div className=' git contact d-flex justify-content-between mt-4 pt-5'>
-          <img className='h-25 mt-3' src={img10} alt="" />
-          <h5 className='mt-3'>Github</h5>
-          <img className='h-25 mt-3' src={img9} alt="" /></div></div>
-        </div>
+            </div>
 
-        <div className=' '  >
-          <img src={img11} alt="" style={{ width:"40rem"}}/>
-        </div>
-        </div>
 
-        
+            <div className=" ">
+              <img src={img11} alt="" className="image img-fluid mt-lg-5 pt-lg-5" />
+            </div>
+          </div>
 
-      </main>
-    </div>
+          <div className="contact d-flex align-items-center gap-4 pb-5  ">
+            <img
+              className="pic rounded-5 mb-4"
+              style={{ width: "3rem" }}
+              src={img7}
+              alt=""
+            />
+
+            <div className="EG d-flex align-items-center gap-2">
+              <img className="pic1 " src={img8} alt="" />
+              <h3 className=" mt-lg-2">Email Me</h3>
+              <img className="pic1 mb-1" src={img9} alt="" />
+            </div>
+
+            <div className="gap-2  d-flex align-items-center gap-2 mb-lg-3 egg">
+              <Link to="https://github.com/favdes" className="EG text-decoration-none d-flex gap-lg-2 ">
+                <img className=" EG h-50 mt-4  pic2" src={img10} alt="" />
+              <h3 className=" mt-3 hub">Github</h3></Link>
+              <img className="pic3 mb-lg-4" src={img9} alt="" />
+            </div>
+          </div>
+        </main>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

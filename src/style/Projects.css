@@ -1,72 +1,177 @@
-.a{
-    color: #F16529;
-    font-family: "Hammersmith One";
-    font-size: 24px;
-    line-height: normal;
+.a {
+  color: #f16529;
+  font-family: "Hammersmith One";
+  font-size: 24px;
+  line-height: normal;
 }
-.p{
-color: #B5B5B5;
-font-family: "Lato";
-font-size: 16px;
-line-height: 27px;
-width: 28rem; 
+.bar{
+  background-color: #212529;
+  
+}
+.paragraph {
+  color: #b5b5b5;
+  font-family: "Lato";
+  line-height: 30px;
+  width: 37rem;
+  
 }
 
-.contact{
-    color: #B5B5B5;
-    font-family: "Hammersmith One";
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    gap: 0.5rem;
-    }
-.b{
- color: #FFF;
-font-family: "Hammersmith One";
-font-size: 51px;
-
+.contact {
+  color: #b5b5b5;
+  font-family: "Hammersmith One";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  gap: 0.5rem;
 }
- .projects{
-        background: #404040;
-        width: 260px;
-        height: 240px;
+.b {
+  color: #fff;
+  font-family: "Hammersmith One";
+  
+}
+.ege{
+  text-decoration: none !important;
     
-    }
-    .p1{
-        color: #F16529;
-        font-family: Lato;
-        font-size: 19px;
-        font-weight: 500;
-        padding-top: 1rem;
+}
+.projects {
+  background: #2f2f2f !important;
+  width: 400px;
+  height: 250px;
+  
+}
+.p1 {
+  color: #f16529;
+  font-family: Lato;
+  font-size: 19px;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+.p11 {
+  color: #83cd29;
+  font-family: Lato;
+  font-size: 19px;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+.p2 {
+  width: 207px;
+  height: 118px;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-family: "Hammersmith One";
+  font-size: 27px;
+  font-weight: 300;
+  padding-top: 2rem;
+}
+.gh1{
+    margin-left: 13rem;
+}
+.gh2{
+  margin-left: 16rem;
+}
+.p3 {
+  padding-top: 2rem;
+  gap: 2rem;
+}
+.p4{
+  margin-top: 0.8rem;
+}
+.p5{
+  margin-top: -0.6rem;
+}
+.P6{
+  margin-top: -0rem;
+}
+.p7{
+  margin-left: -3rem;
+  text-decoration: none !important;
+  
+}
+.ge{
+  margin-left: 15rem !important;
+}
+.p8{
+  
+  
+}
 
-    }
-    .p11{
-        color: #83CD29;;
-        font-family: Lato;
-        font-size: 19px;
-        font-weight: 500;
-        padding-top: 1rem;
+.h6-txt{
+  text-decoration: none !important;
+}
 
-    }
-    .p2{
-        width: 207px;
-        height: 118px;
-        flex-direction: column;
-        justify-content: center;
-        color: #FFF;
-        font-family: "Hammersmith One";
-        font-size: 27px;
-        font-weight: 300;
-        padding-top: 2rem;
-        
-    }
-    .p3{
-        padding-top: 2rem;
-        gap: 2rem;
-    }
-    .p4{
-        height: 0.7rem;
-        margin-left: -0.3rem;
+.proanimate {
+  animation: proanimate 3s;
+}
 
-    }
+
+
+@keyframes proanimate {
+  0% {
+    transform: translateY(-800px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media(max-width:428px) {
+  .full{
+    /* margin-top: -4rem; */
+    margin-left: -0.2rem;
+  
+  }
+  .projects{
+    margin-bottom: 3rem;
+    width: 14rem;
+  
+  }
+  .dlm{
+    display: flex !important;
+  }
+  .paragraph{
+    width: 21rem;
+  }
+  .Em{
+    margin-left: 0.2rem !important;
+  }
+  .gh1{
+    margin-left: 3.3rem;
+  }.gh2{
+      margin-left: 6.5rem;
+  }
+  .p4{
+    margin-top: 4.8rem;
+    
+  
+  }
+  .p3{
+    margin-left: -1.8rem;
+  }
+  .ege{
+   margin-bottom: -8rem;
+   margin-top: 2.3rem;
+  }
+  .p7{
+    margin-top: 2.4rem;
+    text-decoration: none !important;
+  
+  }
+  .sec{
+    padding-left: -2rem;
+  }
+  .p8{
+    margin-left: -0.1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem !important;
+  }
+  .p6{
+    margin-left: 2.5rem !important;
+  }
+  .dl{
+    /* display: flex !important; */
+    
+  }
+
+}
+

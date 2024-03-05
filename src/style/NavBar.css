@@ -1,0 +1,26 @@
+.nav{
+    margin-left: -4.5rem !important;
+}
+.lg{
+    display: flex;
+}
+@media(max-width:428px) {
+    .project {
+        display: none;
+    }
+    .nav{
+        margin-left: -4.2rem !important;
+        margin-right: 10.5rem !important;
+    }
+    .off{
+        margin-right: -0.rem !important;
+        margin-top: 1rem;
+        /* background-color: aqua; */
+    }
+    .lg{
+        display: none;
+    }
+    
+    
+
+}

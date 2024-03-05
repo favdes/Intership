@@ -1,108 +1,128 @@
-import React from 'react'
-import img1 from "../assets/my picture.jpg"
-import img2 from "../assets/Group 11.png"
-import img3 from "../assets/Vector (19).png"
-import img4 from "../assets/Vector (20).png"
-import { Link } from 'react-router-dom';
-import "../style/Contacts.css"
 
+import img1 from "../assets/my picture.jpg";
+import img2 from "../assets/Group 11.png";
+import img3 from "../assets/Vector (19).png";
+import img4 from "../assets/Vector (20).png";
+import { Link } from "react-router-dom";
+import "../style/Contacts.css";
+import MessageSentModal from "../component/MessageSentModal";
+import DownloadModal from "../component/DownloadModal";
 
 const Contacts = () => {
+  // const handleMessage = (e)=>{
+  //   e.preventDefault()
+  // }
+
   return (
-    <div>
-       <div className='d-lg-flex justify-content-between bg-dark text-white'>
-       <div className=" w-100 ms-5 ">
-          <div className=" sticky-top">
-            <Link className="text-white text-decoration-none " to="/">
-              <h4 className='mt-4'>FAVDEVS.</h4>
+    <div className="">
+      <div className="d-lg-flex justify-content-between bg-black text-white">
+        <div className=" ">
+          <div className="">
+            <Link className="text-white text-decoration-none" to="/">
+              <h4 className=" navbar">FAVDEVS.</h4>
             </Link>
           </div>
 
-          <section className="">
-            <div className=" container mt-5 pt-5 ">
-              <button className="a bg-white mt-5 " style={{ border: "none" }}>
+          <section className="main">
+            <div className=" container  ">
+              <button className="a bg-white ms-lg-3" style={{ border: "none", fontSize: "1.8rem" }}>
                 Full Stack Developer
               </button>
-              <h5 className="b text-white mt-4">Favour Echiejile</h5>
-              <p className="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                pha tortor consequat nibh gravida id sit. Quis eget diam ut
-                proin. At nisl diam urna sit. Tortor nibh ornare vestibulum amet
-                dis eros dolor eget. Orci in enim sit luctus lacus arcu.
+              <h5 className="b text-white mt-4" style={{ fontSize: "3.9rem", }}>
+                Favour Echiejile
+              </h5>
+              <p className="p ms-3  " style={{ fontSize: "1.5rem" }}>
+                CAREER OBJECTIVES : To work with existing staff, facilities and
+                ensure business objectives are achieved. Secondly, to use my
+                skills to contribute immensely to the growth of any
+                establishment through hard work, commitment and the drive for
+                excellence even as I grow forward and upward in my career.
               </p>
             </div>
           </section>
 
-          <div className="d-flex my-5 ">
+          <div className="main d-lg-flex ms-3 mt-4 route">
             <ul className="container list-unstyled ">
-              <Link to="/projects " className='text-decoration-none'><li style={{color: "#B5B5B5"}}> 01 ___ Projects </li></Link>
-              <Link to="/DownloadResume" className='text-decoration-none'><li style={{color: "#B5B5B5"}}>02 ___ Download Resume</li></Link>
-              <Link to="/Contacts " className='text-decoration-none text-white'><li>03 ___ Contact</li></Link>
+              <Link to="/projects " className="text-decoration-none">
+                <li style={{ color: "#B5B5B5" }}> <h4>01 ___ Projects </h4></li>
+              </Link>
+              <li className="d-flex" style={{ color: "#B5B5B5" }}>
+                <h4 className="d-flex">02 ___<DownloadModal/></h4>
+              </li>
+              <Link to="/Contacts " className="text-decoration-none text-white">
+                <li><h5>03 ___Contact</h5></li>
+              </Link>
             </ul>
           </div>
-          <div className="d-flex align-items-right ">
-            <section className="container sticky-top ">
+          <div className="man d-lg-flex align-items-right  ">
+            <section className="ms-1 ">
+              <div className="contact d-flex align-items-center gap-5  pb-4">
+              <img
+              className="pic rounded-5 mb-2 "
+              style={{ width: "3rem",marginTop:"2rem" }}
+              src={img1}
+              alt=""
+            />
+               
+              <div>
+                  <div className="contact d-flex gap-2 mt-4">
+                    <img className="gh1 h-25 mt-1 ps-lg-4" src={img2} alt="" />
+                    Email Me
+                    <img className="h-25 mt-1" src={img3} alt="" />
+                  </div>
+                </div>
 
-              <div className="contact d-flex align-items-center gap-5 mt-3 pb-4">
-                <img className="h-75 " style={{width:"3rem"}}  src={img1} alt="" />
-                
-                <div>
-                <div className="contact d-flex gap-2 mt-2">
-                 <img className=" h-25 mt-1 " src={img2} alt="" />
-                  Email Me
-                  <img className="h-25 mt-1" src={img3} alt="" />
+                <div className="Gh">
+                  <Link
+                    to="https://github.com/favdes"
+                    className="contact text-decoration-none d-flex gap-2 mt-3"
+                    style={{ color: "#B5B5B5" }}
+                  >
+                    <img className=" h-25 mt-1" src={img4} alt="" />
+                    Github
+                    <img className="h-25 mt-1" src={img3} alt="" />
+                  </Link>
                 </div>
-                </div>
-                
-                    
-                        <div>
-                        <Link to='https://github.com/favdes' className="contact text-decoration-none d-flex gap-2" style={{color:"#B5B5B5"}}>
-                        <img className="h-25 mt-1" src={img4} alt="" />
-                        Github
-                        <img className="h-25 mt-1" src={img3} alt="" />
-                  
-                        </Link>
-                        </div>
-                         </div>
+              </div>
             </section>
           </div>
-         </div>
-      
-           <div className='container' style={{}}>
-           <form className='container' action="" style={{width:"32rem"}}>
-         <h1 className='mt-5'>Send A Message</h1>
-            <input 
-            type="text" 
-            placeholder='From:'
-            style={{background:"#404040"}}
-            className='w-100 my-3 p-2'
+        </div>
+
+        <div className="container mt-5 info mass">
+          <form className="container mass" action="" style={{ width: "36rem" }}>
+            <h1 className=" sm">Send A Message</h1>
+            <input
+              type="text"
+              placeholder="From:"
+              style={{ background: "#404040", color: "white" }}
+              className="info w-lg-75 my-4 p-2 "
             />
 
             <input 
-            type="text" 
-            placeholder='Subject:'
-            style={{background:"#404040"}}
-            className='w-100 my-3 p-2'
+              type="text"
+              placeholder="Subject:"
+              style={{ background: "#404040", color: "white"}}
+              className="info my-2 p-2 mt-3 w-lg-75 "
             />
 
             <textarea
-            className='w-100 my-3 p-2'
-            placeholder='Write Message...'
-            style={{background:"#404040", color:"gray", height:"20rem"}} >
-                 </textarea>
-
-            <div className='text-center'>
-               <Link to="/MessageSent">
-               <button className="btn btn-light px-3">
-                    Send Message
-                </button>
-               </Link>
+              className="info my-2 p-2 mt-4 w-lg-75 "
+              placeholder="Write Message..."
+              style={{
+                background: "#404040",
+                color: "white",
+                height: "15rem",
+              }}
+            ></textarea>
+            <div className="msm  mt-4 pb-5">
+              <h4 className="msm"><MessageSentModal /></h4>
             </div>
-         </form>
-           </div>
-        </div> 
+          </form>
+        </div>
+        
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contacts
+export default Contacts;

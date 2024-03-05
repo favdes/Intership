@@ -1,367 +1,725 @@
-import React from "react";
+
 import "../style/Projects.css";
-import img1 from "../assets/my picture.jpg"
+import img1 from "../assets/my picture.jpg";
 import img2 from "../assets/Group 11.png";
 import img3 from "../assets/Vector (19).png";
 import img4 from "../assets/Vector (20).png";
 import { Link } from "react-router-dom";
 import img5 from "../assets/Vector (21).png";
+import DownloadModal from "../component/DownloadModal";
 
 const Projects = () => {
+
+
+  
   return (
     <div className="">
-      <div className="d-flex justify-content-between bg-dark text-white ">
-        <div className=" w-100 ms-5 position-">
-          <div className=" sticky-top">
-            <Link className="text-white text-decoration-none mt-3" to="/">
-              <h4 className="mt-3">FAVDEVS.</h4>
+      <div className="d-lg-flex justify-content-between bg-black text-white ">
+        <div className="conainer w-100 ">
+          <div className="">
+            <Link className=" text-white text-decoration-none mt-3" to="/">
+              <h4 className="bar p-4">FAVDEVS.</h4>
             </Link>
           </div>
 
-          <section className="">
-            <div className=" container mt-5 pt-5 ">
-              <button className="a bg-white mt-5 " style={{ border: "none" }}>
+          <section className="container">
+            <div className="container  mt-lg-5 pt-5 ">
+              <button
+                className="full bg-white  "
+                style={{ border: "none", fontSize: "1.8rem" }}
+              >
                 Full Stack Developer
               </button>
-              <h5 className="b text-white mt-4">Favour Echiejile</h5>
-              <p className="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                pha tortor consequat nibh gravida id sit. Quis eget diam ut
-                proin. At nisl diam urna sit. Tortor nibh ornare vestibulum amet
-                dis eros dolor eget. Orci in enim sit luctus lacus arcu.
+              <h5 className="b text-white mt-5" style={{ fontSize: "4rem" }}>
+                Favour Echiejile
+              </h5>
+              <p className=" paragraph mt-3" style={{ fontSize: "1.5rem" }}>
+                CAREER OBJECTIVES : To work with existing staff, facilities and
+                ensure business objectives are achieved. Secondly, to use my
+                skills to contribute immensely to the growth of any
+                establishment through hard work,commitment and the drive for
+                excellence even as I grow forward and upward in my career.
               </p>{" "}
             </div>
           </section>
 
-          <div className="d-flex my-5 ">
+          <div className=" container d-flex my-5 ">
             <ul className="container list-unstyled ">
-              <Link t0="/projects" className="text-decoration-none text-white"><li> 01 ___ Projects </li></Link>
-              <Link to="/DownloadResume" className="text-decoration-none"><li style={{color: "#B5B5B5"}}>02 ___ Download Resume</li></Link>
-              <Link to="/contacts" className="text-decoration-none"><li style={{color: "#B5B5B5"}}>03 ___ Contacts</li></Link>
+              <Link t0="/projects" className="text-decoration-none text-white">
+                <h4>
+                  <li>01 ___ Projects</li>
+                </h4>
+              </Link>
+              <div className="dl">
+                <li style={{ color: "#B5B5B5" }}>
+                  {" "}
+                  <h4 className="dlm d-flex">
+                    02 ___
+                    <DownloadModal />
+                  </h4>
+                </li>
+              </div>
+              <Link to="/contacts" className="text-decoration-none">
+                <li style={{ color: "#B5B5B5" }}>
+                  {" "}
+                  <h4>03 ___ Contacts</h4>{" "}
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="d-flex align-items-right ">
             <section className="container  ">
-
-              <div className=" d-flex gap-5 ">
-                <img className="h-75 " style={{width:"3rem"}} src={img1} alt="" />
-                  
-                     <div>
-                     <div className="d-flex gap-2 mt-2 " style={{color:"#B5B5B5"}}>
-                 <img className=" h-25 mt-1" src={img2} alt="" />
-                  <h5>Email Me</h5>
-                  <img className="h-25 mt-1 " src={img3} alt="" />
+              <div className="d-flex gap-3 mb-3">
+                <img
+                  className="pic rounded-5 mb-4"
+                  style={{ width: "3rem" }}
+                  src={img1}
+                  alt=""
+                />
+                <div>
+                  <div
+                    className="Em d-flex gap-2 mt-2  ms-lg-2"
+                    style={{ color: "#B5B5B5" }}
+                  >
+                    <img className="Em h-25 mt-1" src={img2} alt="" />
+                    <h5 className="Em">Email Me</h5>
+                    <img className=" Em h-25 mt-1 " src={img3} alt="" />
+                  </div>
                 </div>
-                     </div>
 
-                
-                    
-                        <div className="">
-                        <Link to='https://github.com/favdes' className="d-flex text-decoration-none gap-2" style={{color:"#B5B5B5"}}>
-                        <img className="h-25 mt-1" src={img4} alt="" />
-                        <h5>Github</h5>
-                        <img className="h-25 mt-1" src={img3} alt="" />
-                  
-                        </Link> 
-                        </div>
-                    
-
+                <div className="me-lg-5 gh2">
+                  <Link
+                    to="https://github.com/favdes"
+                    className="d-flex text-decoration-none gap-2"
+                    style={{ color: "#B5B5B5" }}
+                  >
+                    <img className="gh2 h-25 mt-2 gh1" src={img4} alt="" />
+                    <h5 className=" mt-1">Github</h5>
+                    <img className=" h-25 mt-2 " src={img3} alt="" />
+                  </Link>
                 </div>
+              </div>
             </section>
           </div>
         </div>
 
-        <div className="container mt-5">
-          <div className="d-flex gap-5">
-          <section className="projects ">
-            <div className=" container ">
-              <h6 className="p1">Javascript,React & node</h6>
-              <h3 className="p2 ">Shopping Cart</h3>
-              <div className="p3 d-flex">
-                <Link to="https://github.com/favdes/shopping-cart" className="contact text-decoration-none">
-                <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-                </Link>
-                 
-                 <Link to="https://shopping-cart-gilt-seven.vercel.app/" className="contact text-decoration-none">
-                 <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-                 </Link>
-              </div>
-            </div>
-          </section>
+        <div
+          className="proanimate container d-flex  justify-content-center "
+          style={{ backgroundColor: "#2a2929" }}
+        >
+          <div>
+            <div className="d-lg-flex gap-5 d-lg-flex  justify-content-center  mt-5 ">
+              <section className="projects w-100">
+                <div className=" container ">
+                  <h6 className="p1">React & Bootstrap And CSS</h6>
+                  <h3 className="p2 ">Shopping Cart</h3>
+                  <div className="p3 d-flex ">
+                    <Link
+                      to="https://github.com/favdes/shopping-cart"
+                      className="contact text-decoration-none"
+                    >
+                      <div className="container git contact  d-flex">
+                        <img className="p4 " src={img4} alt="" />
+                        <h6 className="p4 d-flex align-items-center  ">
+                          Github
+                        </h6>
+                        <img className="p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
 
-          <section className="projects">
-            <div className=" container ">
-              <h6 className="p1">React & Node</h6>
-              <h3 className="p2 ">Ecommerce Front Website</h3>
-              <div className="p3 d-flex">
-                <Link to="https://github.com/favdes/ecommercefront" className="contact text-decoration-none">
-                <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
+                    <Link
+                      to="https://shopping-cart-gilt-seven.vercel.app/"
+                      className="contact text-decoration-none"
+                    >
+                      <div className=" git contact  d-flex  ">
+                        <img className="p4  " src={img5} alt="" />
+                        <h6 className="p4 d-flex align-items-center">
+                          Website
+                        </h6>
+                        <img className=" p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+                  </div>
                 </div>
-                </Link>
+              </section>
 
-                <Link to="https://ecommercefront-zeta.vercel.app/" className="contact text-decoration-none">
-                <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
+              <section className="projects w-100">
+                <div className=" container ">
+                  <h6 className="p1">React & Node</h6>
+                  <h3 className="p2 ">Ecommerce Front Website</h3>
+                  <div className="p3 d-flex">
+                    <Link
+                      to="https://github.com/favdes/ecommercefront"
+                      className="contact text-decoration-none"
+                    >
+                      <div className="container git contact  d-flex">
+                        <img className="p4 " src={img4} alt="" />
+                        <h6 className="p4 d-flex align-items-center">Github</h6>
+                        <img className="p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="https://ecommercefront-zeta.vercel.app/"
+                      className="contact text-decoration-none"
+                    >
+                      <div className=" git contact  d-flex  ">
+                        <img className="p4  " src={img5} alt="" />
+                        <h6 className="p4 d-flex align-items-center">
+                          Website
+                        </h6>
+                        <img className=" p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+                  </div>
                 </div>
-                </Link>
-              </div>
+              </section>
             </div>
-          </section>
+            <div className="d-lg-flex gap-5 d-lg-flex  justify-content-center mt-5">
+              <section className="projects w-100">
+                <div className=" container ">
+                  <h6 className="p11">Javacript, React & Node</h6>
+                  <h3 className="p2 ">TASK Manager Website</h3>
+                  <div className="p3 d-flex">
+                    <Link
+                      to="https://github.com/favdes/My-Frontend-Project"
+                      className="contact text-decoration-none"
+                    >
+                      <div className="container git contact  d-flex">
+                        <img className="p4 " src={img4} alt="" />
+                        <h6 className="p4 d-flex align-items-center">Github</h6>
+                        <img className="p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="https://my-frontend-project-gamma.vercel.app/"
+                      className="contact text-decoration-none"
+                    >
+                      <div className=" git contact  d-flex  ">
+                        <img className="p4  " src={img5} alt="" />
+                        <h6 className="p4 d-flex align-items-center">
+                          Website
+                        </h6>
+                        <img className=" p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+
+              <section className="projects w-100">
+                <div className=" container ">
+                  <h6 className="p11">Javacript</h6>
+                  <h3 className="p2 ">NEWSLETTER SignUP</h3>
+                  <div className="p3 d-flex">
+                    <Link
+                      to="https://github.com/favdes/newslettersignup"
+                      className="contact text-decoration-none"
+                    >
+                      <div className="container git contact  d-flex">
+                        <img className="p4" src={img4} alt="" />
+                        <h6 className="p4 d-flex align-items-center">Github</h6>
+                        <img className="p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="https://newslettersignup-nu.vercel.app/"
+                      className="contact text-decoration-none"
+                    >
+                      <div className=" git contact  d-flex  ">
+                        <img className="p4  " src={img5} alt="" />
+                        <h6 className="p4 d-flex align-items-center">
+                          Website
+                        </h6>
+                        <img className=" p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div className="d-lg-flex gap-5 mt-5 d-lg-flex  justify-content-center">
+              <section className="projects w-100">
+                <div className=" container ">
+                  <h6 className="p1">BOOTSTRAP & CSS</h6>
+                  <h3 className="p2 ">RemoteWork Website</h3>
+                  <div className="p3 d-flex">
+                    <Link
+                      to="https://github.com/favdes/Remotework"
+                      className="contact text-decoration-none"
+                    >
+                      <div className="container git contact  d-flex">
+                        <img className="p4 " src={img4} alt="" />
+                        <h6 className="p4 d-flex align-items-center">Github</h6>
+                        <img className="p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="https://remotework-five.vercel.app/"
+                      className="contact text-decoration-none"
+                    >
+                      <div className=" git contact  d-flex  ">
+                        <img className="p4  " src={img5} alt="" />
+                        <h6 className="p4 d-flex align-items-center">
+                          Website
+                        </h6>
+                        <img className=" p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+
+              <section className="projects w-100">
+                <div className=" container ">
+                  <h6 className="p11">Html $ CSS</h6>
+                  <h3 className="p2 ">Home Page</h3>
+                  <div className="p3 d-flex">
+                    <Link
+                      to="https://github.com/favdes/NEWHOMEPAGE"
+                      className="contact text-decoration-none"
+                    >
+                      <div className="container git contact  d-flex">
+                        <img className="p4 " src={img4} alt="" />
+                        <h6 className="p4 d-flex align-items-center">Github</h6>
+                        <img className="p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="https://newhomepage-two.vercel.app/"
+                      className="contact text-decoration-none"
+                    >
+                      <div className=" git contact  d-flex  ">
+                        <img className="p4  " src={img5} alt="" />
+                        <h6 className="p4 d-flex align-items-center">
+                          Website
+                        </h6>
+                        <img className=" p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div className="d-lg-flex gap-5 mt-5 d-lg-flex  justify-content-center">
+              <section className="projects w-100">
+                <div className=" container ">
+                  <h6 className="p1">React & Node</h6>
+                  <h3 className="p2 ">Personal-Tasks Website</h3>
+                  <div className="p3 d-flex">
+                    <Link
+                      to="https://github.com/favdes/personalTask-Frontend"
+                      className="contact text-decoration-none"
+                    >
+                      <div className="container git contact  d-flex">
+                        <img className="p4 " src={img4} alt="" />
+                        <h6 className="p4 d-flex align-items-center">Github</h6>
+                        <img className="p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="https://personal-task-frontend.vercel.app/"
+                      className="contact text-decoration-none"
+                    >
+                      <div className=" git contact  d-flex  ">
+                        <img className="p4  " src={img5} alt="" />
+                        <h6 className="p4 d-flex align-items-center">
+                          Website
+                        </h6>
+                        <img className=" p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+
+              <section className="projects w-100">
+                <div className=" container ">
+                  <h6 className="p1">React, Node, Bootstrap & CSS</h6>
+                  <h3 className="p2 ">POSTIT - Website</h3>
+                  <div className="p3 d-flex">
+                    <Link
+                      to="https://github.com/favdes/MyPost"
+                      className="contact text-decoration-none"
+                    >
+                      <div className="container git contact  d-flex">
+                        <img className="p4 p5" src={img4} alt="" />
+                        <h6 className="p4 p5 d-flex align-items-center">
+                          Github
+                        </h6>
+                        <img className="p4 p5" src={img3} alt="" />
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="https://my-post-eight.vercel.app/"
+                      className="contact text-decoration-none"
+                    >
+                      <div className=" git contact  d-flex  ">
+                        <img className="p4  p5" src={img5} alt="" />
+                        <h6 className="p4 p5 d-flex align-items-center">
+                          Website
+                        </h6>
+                        <img className=" p4 p5" src={img3} alt="" />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div className="d-lg-flex gap-5 mt-5  justify-content-center">
+              <section className="projects w-100">
+                <div className=" container ">
+                  <h6 className="p11">React & Node</h6>
+                  <h3 className="p2 ">Restfull API Website</h3>
+                  <div className="p3 d-flex">
+                    <Link
+                      to="https://github.com/favdes/RestFull-API-Goal-ON-Frontend-"
+                      className="contact text-decoration-none"
+                    >
+                      <div className="container git contact  d-flex">
+                        <img className="p4 " src={img4} alt="" />
+                        <h6 className="p4  d-flex align-items-center">
+                          Github
+                        </h6>
+                        <img className="p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="https://rest-full-api-goal-on-frontend.vercel.app/"
+                      className="contact text-decoration-none"
+                    >
+                      <div className=" git contact  d-flex  ">
+                        <img className="p4  " src={img5} alt="" />
+                        <h6 className="p4 d-flex align-items-center">
+                          Website
+                        </h6>
+                        <img className=" p4 " src={img3} alt="" />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+
+              <section className="projects w-100 mb-5 ">
+                <div className=" container">
+                  <h6 className="p11">React, Node,Bootstrap & CSS</h6>
+                  <h3 className="p2 ">GitUser Search Website</h3>
+                  <div className="p8 gap-4 d-flex text-decoration-none">
+                    <Link
+                      className="l6-ll text-decoration-none"
+                      to="https://github.com/favdes/GitUserSearch "
+                    >
+                      <div className="container contact  d-flex ">
+                        <img className="p4 ege l6-ll" src={img4} alt="" />
+                        <h6 className="p4 d-flex align-items-center p7">
+                          Github
+                        </h6>
+                        <img className="p4 ege l6-ll " src={img3} alt="" />
+                      </div>
+                    </Link>
+
+                    <Link
+                      className="l6-ll text-decoration-none"
+                      to="https://git-user-search-ashen.vercel.app/"
+                    >
+                      <div className=" git contact d-flex  p6 ">
+                        <img className="p4 ms-1  p7" src={img5} alt="" />
+                        <h6 className="p4  h6-txt d-flex align-items-center p7 text-decoration-none">
+                          Website
+                        </h6>
+                        <img className="p4 p7" src={img3} alt="" />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
-         <div className="d-flex gap-5 mt-5">
-         <section className="projects ">
-            <div className=" container ">
-              <h6 className="p11">Javacript, React & Node</h6>
-              <h3 className="p2 ">TASK Manager Website</h3>
-              <div className="p3 d-flex">
-                 <Link to="https://github.com/favdes/My-Frontend-Project" className="contact text-decoration-none">
-                 <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-                 </Link>
-
-                <Link to="https://my-frontend-project-gamma.vercel.app/" className="contact text-decoration-none">
-                <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-                </Link>
-              </div>
-            </div>
-          </section>
-
-          <section className="projects">
-            <div className=" container ">
-              <h6 className="p11">Javacript</h6>
-              <h3 className="p2 ">NEWSLETTER SignUP</h3>
-              <div className="p3 d-flex">
-               <Link to="https://github.com/favdes/newslettersignup" className="contact text-decoration-none">
-               <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-               </Link>
-                
-                <Link to="https://vercel.com/favdevs/newslettersignup" className="contact text-decoration-none">
-                <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-                </Link>
-              </div>
-            </div>
-          </section>
-         </div>
-         
-         <div className="d-flex gap-5 mt-5">
-         <section className="projects ">
-            <div className=" container ">
-              <h6 className="p1">BOOTSTRAP & CSS</h6>
-              <h3 className="p2 ">RemoteWork Website</h3>
-              <div className="p3 d-flex">
-                <Link to="https://github.com/favdes/Remotework" className="contact text-decoration-none">
-                <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-                </Link>
-                   
-                   <Link to="https://remotework-five.vercel.app/" className="contact text-decoration-none">
-                   <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-                   </Link>
-              </div>
-            </div>
-          </section>
-
-          <section className="projects">
-            <div className=" container ">
-              <h6 className="p11">React & Node</h6>
-              <h3 className="p2 ">POSTIT - Blog Website</h3>
-              <div className="p3 d-flex">
-               <Link to="https://github.com/favdes/NEWHOMEPAGE"className="contact text-decoration-none">
-               <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-               </Link>
-                 
-                 <Link to="https://newhomepage-two.vercel.app/"className="contact text-decoration-none">
-                 <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-                 </Link>
-              </div>
-            </div>
-          </section>
-         </div>
-
-         <div className="d-flex gap-5 mt-5">
-         <section className="projects ">
-            <div className=" container ">
-              <h6 className="p1">Javacript, React & Node</h6>
-              <h3 className="p2 ">FARMA -E-commerce Website</h3>
-              <div className="p3 d-flex">
-                <Link to="https://github.com/favdes/GitUserSearch"className="contact text-decoration-none">
-                <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-                </Link>
-                
-                <Link to="https://git-user-search-ashen.vercel.app/"className="contact text-decoration-none">
-                <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-                </Link>
-              </div>
-            </div>
-          </section>
-
-          <section className="projects">
-            <div className=" container ">
-              <h6 className="p1">React & Node</h6>
-              <h3 className="p2 ">POSTIT - Blog Website</h3>
-              <div className="p3 d-flex">
-                <Link to="https://github.com/favdes/MyPost"className="contact text-decoration-none">
-                <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-                </Link>
-
-                   <Link to="" className="contact text-decoration-none">
-                   <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-                  </Link>
-              </div>
-            </div>
-          </section>
-         </div>
-
-         <div className="d-flex gap-5 mt-5">
-         <section className="projects ">
-            <div className=" container ">
-              <h6 className="p11">Javacript, React & Node</h6>
-              <h3 className="p2 ">FARMA -E-commerce Website</h3>
-              <div className="p3 d-flex">
-                <Link to="" className="contact text-decoration-none">
-                <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-                </Link>
-                    
-                  <Link to=""className="contact text-decoration-none">
-                  <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-                  </Link>
-              </div>
-            </div>
-          </section>
-
-          <section className="projects">
-            <div className=" container ">
-              <h6 className="p11">React & Node</h6>
-              <h3 className="p2 ">POSTIT - Blog Website</h3>
-              <div className="p3 d-flex">
-                <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-                <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-              </div>
-            </div>
-          </section>
-         </div>
-
-         <div className="d-flex gap-5 mt-5">
-         <section className="projects ">
-            <div className=" container ">
-              <h6 className="p1">Javacript, React & Node</h6>
-              <h3 className="p2 ">FARMA -E-commerce Website</h3>
-              <div className="p3 d-flex">
-                <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-                <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="projects mb-5">
-            <div className=" container ">
-              <h6 className="p11">React & Node</h6>
-              <h3 className="p2 ">POSTIT - Blog Website</h3>
-              <div className="p3 d-flex">
-                <div className="container git contact  d-flex">
-                  <img className="p4 " src={img4} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Github</h6>
-                  <img className="p4 " src={img3} alt="" />
-                </div>
-                <div className=" git contact  d-flex  ">
-                  <img className="p4  " src={img5} alt="" />
-                  <h6 className="p4 d-flex align-items-center">Website</h6>
-                  <img className=" p4 " src={img3} alt="" />
-                </div>
-              </div>
-            </div>
-          </section>
-         </div>
         </div>
-        
-
-        
       </div>
     </div>
   );
 };
 
 export default Projects;
+
+
+
+
+
+
+
+
+// import "../style/Projects.css";
+// import img1 from "../assets/my picture.jpg";
+// import img2 from "../assets/Group 11.png";
+// import img3 from "../assets/Vector (19).png";
+// import img4 from "../assets/Vector (20).png";
+// import { Link } from "react-router-dom";
+// import img5 from "../assets/Vector (21).png";
+// import DownloadModal from "../component/DownloadModal";
+
+// const Projects = () => {
+//   const projects = [
+//     {
+//       id: 1,
+//       stack: "React & Bootstrap And CSS",
+//       title: "Shopping Cart",
+//       githubLink: "https://github.com/favdes/shopping-cart",
+//       websiteLink: "https://shopping-cart-gilt-seven.vercel.app/",
+//       image: img4,
+//     },
+//     {
+//       id: 2,
+//       stack: "React & Node",
+//       title: "Ecommerce Front Website",
+//       githubLink: "https://github.com/favdes/ecommercefront",
+//       websiteLink: "https://ecommercefront-zeta.vercel.app/",
+//       image: img5,
+      
+//     },
+//     {
+//       id: 3,
+//       stack: "Javacript, React & Node",
+//       title: "TASK Manager Website",
+//       githubLink: "https://github.com/favdes/My-Frontend-Project",
+//       websiteLink: "https://my-frontend-project-gamma.vercel.app/",
+//       image: img4,
+//     },
+//     {
+//       id: 4,
+//       stack: "Javacript",
+//       title: "NEWSLETTER SignUP",
+//       githubLink: "https://github.com/favdes/newslettersignup",
+//       websiteLink: "https://newslettersignup-nu.vercel.app/",
+//       image: img5,
+//     },
+//     {
+//       id: 5,
+//       stack: "BOOTSTRAP & CSS",
+//       title: "RemoteWork Website",
+//       githubLink: "https://github.com/favdes/Remotework",
+//       websiteLink: "https://remotework-five.vercel.app/",
+//       image: img4,
+//     },
+//     {
+//       id: 6,
+//       stack: "Html $ CSS",
+//       title: "Home Page",
+//       githubLink: "https://github.com/favdes/NEWHOMEPAGE",
+//       websiteLink: "https://newhomepage-two.vercel.app/",
+//       image: img5,
+//     },
+//     {
+//       id: 7,
+//       stack: "React & Node",
+//       title: "Personal-Tasks Website",
+//       githubLink: "https://github.com/favdes/personalTask-Frontend",
+//       websiteLink: "https://personal-task-frontend.vercel.app/",
+//       image: img4,
+//     },
+//     {
+//       id: 8,
+//       stack: "React, Node, Bootstrap & CSS",
+//       title: "POSTIT - Website",
+//       githubLink: "https://github.com/favdes/MyPost",
+//       websiteLink: "https://my-post-eight.vercel.app/",
+//       image: img5,
+//     },
+//     {
+//       id: 9,
+//       stack: "React & Node",
+//       title: "Restfull API Website",
+//       githubLink: "https://github.com/favdes/RestFull-API-Goal-ON-Frontend-",
+//       websiteLink: "https://rest-full-api-goal-on-frontend.vercel.app/",
+//       image: img4,
+//     },
+//     {
+//       id: 10,
+//       stack: "React, Bootstrap & CSS",
+//       title: "GitUser Search Website",
+//       githubLink: "https://github.com/favdes/GitUserSearch",
+//       websiteLink: "https://git-user-search-ashen.vercel.app/",
+//       image: img5,
+//     },
+//     Add more project objects as needed
+//   ];
+
+//   return (
+//     <div className="">
+//       <div className="d-lg-flex justify-content-between bg-black text-white ">
+//         <div className="conainer w-100">
+//           <div className="">
+//             <Link className=" text-white text-decoration-none mt-3" to="/">
+//               <h4 className="bar p-4">FAVDEVS.</h4>
+//             </Link>
+//           </div>
+
+//           <section className="container">
+//             <div className="container  mt-lg-5 pt-5 ">
+//               <button
+//                 className="full bg-white  "
+//                 style={{ border: "none", fontSize: "1.8rem" }}
+//               >
+//                 Full Stack Developer
+//               </button>
+//               <h5 className="b text-white mt-5" style={{ fontSize: "4rem" }}>
+//                 Favour Echiejile
+//               </h5>
+//               <p className=" paragraph mt-3" style={{ fontSize: "1.5rem" }}>
+//                 CAREER OBJECTIVES : To work with existing staff, facilities and
+//                 ensure business objectives are achieved. Secondly, to use my
+//                 skills to contribute immensely to the growth of any
+//                 establishment through hard work,commitment and the drive for
+//                 excellence even as I grow forward and upward in my career.
+//               </p>{" "}
+//             </div>
+//           </section>
+
+//           <div className=" container d-flex my-5 ">
+//             <ul className="container list-unstyled ">
+//               <Link t0="/projects" className="text-decoration-none text-white">
+//                 <h3>
+//                   <li>01 ___ Projects</li>
+//                 </h3>
+//               </Link>
+//               <div className="dl">
+//                 <li style={{ color: "#B5B5B5" }}>
+//                   {" "}
+//                   <h3 className="dlm d-flex">
+//                     02 ___
+//                     <DownloadModal />
+//                   </h3>
+//                 </li>
+//               </div>
+//               <Link to="/contacts" className="text-decoration-none">
+//                 <li style={{ color: "#B5B5B5" }}>
+//                   {" "}
+//                   <h3>03 ___ Contacts</h3>{" "}
+//                 </li>
+//               </Link>
+//             </ul>
+//           </div>
+//           <div className="d-flex align-items-right ">
+//             <section className="container  ">
+//               <div className="d-flex gap-3 mb-3">
+//                 <img
+//                   className="pic rounded-5 mb-4"
+//                   style={{ width: "3rem" }}
+//                   src={img1}
+//                   alt=""
+//                 />
+//                 <div>
+//                   <div
+//                     className="Em d-flex gap-2 mt-2  ms-lg-2"
+//                     style={{ color: "#B5B5B5" }}
+//                   >
+//                     <img className="Em h-25 mt-1" src={img2} alt="" />
+//                     <h5 className="Em">Email Me</h5>
+//                     <img className=" Em h-25 mt-1 " src={img3} alt="" />
+//                   </div>
+//                 </div>
+
+//                 <div className="me-lg-5 gh2">
+//                   <Link
+//                     to="https://github.com/favdes"
+//                     className="d-flex text-decoration-none gap-2"
+//                     style={{ color: "#B5B5B5" }}
+//                   >
+//                     <img className="gh2 h-25 mt-2 gh1" src={img4} alt="" />
+//                     <h5 className=" mt-1">Github</h5>
+//                     <img className=" h-25 mt-2 " src={img3} alt="" />
+//                   </Link>
+//                 </div>
+//               </div>
+//             </section>
+//           </div>
+//         </div>
+
+        
+//         <div
+//           className="proanimate container justify-content-center "
+//           style={{ backgroundColor: "#2a2929" }}
+//         >
+//           <div className="">
+//           {projects.map((project) => (
+//             <section key={project.id} className="projects w-100">
+//               <div className="container ">
+//                 <h6 className=" p1">{project.stack}</h6>
+//                 <h3 className="p2">{project.title}</h3>
+//                 <div className="p3 d-flex">
+//                   <Link
+//                     to={project.githubLink}
+//                     className="contact text-decoration-none"
+//                   >
+//                     <div className="container git contact d-flex">
+//                       <img className="p4" src={project.image} alt="" />
+//                       <h6 className="p4 d-flex align-items-center">Github</h6>
+//                       <img className="p4" src={img3} alt="" />
+//                     </div>
+//                   </Link>
+//                   <Link
+//                     to={project.websiteLink}
+//                     className="contact text-decoration-none"
+//                   >
+//                     <div className="git contact d-flex">
+//                       <img className="p4" src={img5} alt="" />
+//                       <h6 className="p4 d-flex align-items-center">Website</h6>
+//                       <img className="p4" src={img3} alt="" />
+//                     </div>
+//                   </Link>
+//                 </div>
+//               </div>
+//             </section>
+//           ))}
+//           </div>
+//           <div className="d-flex">
+//           {projects.map((project) => (
+//             <section key={project.id} className="projects w-100 ">
+//               <div className="container ">
+//                 <h6 className="p1">{project.stack}</h6>
+//                 <h3 className="p2">{project.title}</h3>
+//                 <div className="p3 d-flex">
+//                   <Link
+//                     to={project.githubLink}
+//                     className="contact text-decoration-none"
+//                   >
+//                     <div className="container git contact d-flex">
+//                       <img className="p4" src={project.image} alt="" />
+//                       <h6 className="p4 d-flex align-items-center">Github</h6>
+//                       <img className="p4" src={img3} alt="" />
+//                     </div>
+//                   </Link>
+//                   <Link
+//                     to={project.websiteLink}
+//                     className="contact text-decoration-none"
+//                   >
+//                     <div className="git contact d-flex">
+//                       <img className="p4" src={img5} alt="" />
+//                       <h6 className="p4 d-flex align-items-center">Website</h6>
+//                       <img className="p4" src={img3} alt="" />
+//                     </div>
+//                   </Link>
+//                 </div>
+//               </div>
+//             </section>
+//           ))}
+//           </div>
+          
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Projects;
