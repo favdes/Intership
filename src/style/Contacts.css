@@ -127,6 +127,8 @@ textarea:focus {
   }
   .info {
     width: 21.5rem;
+    position: relative;
+    left: -1.4rem !important;
   }
   .msm {
     margin-left: -2rem;
@@ -143,11 +145,13 @@ textarea:focus {
   padding-top: 1rem;
 }
 .Gh{
-  margin-left: -0.6rem;
-  margin-top: 1.2rem;
+  margin-left: -7rem;
+  margin-top: 0.3rem;
 }
 .sm{
   margin-top: -8rem;
+  position: relative;
+  left: -1rem;
 }
 .body{
   margin-left: 0.1rem;
